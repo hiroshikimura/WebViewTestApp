@@ -32,6 +32,20 @@ class ViewController: UIViewController , UIWebViewDelegate{
         btnNext.layer.cornerRadius = btn_radius
         btnNext.layer.masksToBounds = true
         btnNext.addTarget(self, action: #selector(ViewController.pressNextBtn(_:)), forControlEvents: .TouchUpInside)
+
+        // webviewなイベントの受信はこちら
+        wvMain.delegate = self
+    }
+    //ページが読み終わったときに呼ばれる関数
+    func webViewDidFinishLoad(webView: UIWebView) {
+        print("ページ読み込み完了しました！")
+        print(webView.request?.URL?.absoluteString)
+        txtURL.text = webView.request?.URL?.absoluteString
+    }
+    //ページを読み始めた時に呼ばれる関数
+    func webViewDidStartLoad(webView: UIWebView) {
+        print("ページ読み込み開始しました！")
+        print(webView.request?.URL?.absoluteString)
     }
 
     override func didReceiveMemoryWarning() {
