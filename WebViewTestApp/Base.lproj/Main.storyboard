@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WebViewTestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tdx-Vz-xUy" userLabel="URL">
+                                <rect key="frame" x="20" y="20" width="380" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="99A-fB-1xQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="editEnter:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="4Ji-Bc-moH"/>
+                                </connections>
+                            </textField>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y0X-a1-iPO" userLabel="WvMain">
+                                <rect key="frame" x="20" y="70" width="560" height="510"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="8bC-Xf-vdC" id="Egg-gc-07a"/>
+                                </connections>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRP-Hk-dEC" userLabel="BtnNext">
+                                <rect key="frame" x="520" y="20" width="60" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2Au-PZ-Vs6"/>
+                                </constraints>
+                                <state key="normal" title="Next"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHF-xB-X3I" userLabel="BtnBack">
+                                <rect key="frame" x="460" y="20" width="60" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="LSB-8r-vkJ"/>
+                                </constraints>
+                                <state key="normal" title="Back"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahO-YG-nod" userLabel="BtnGo">
+                                <rect key="frame" x="400" y="20" width="60" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="CId-Ff-z6i"/>
+                                </constraints>
+                                <state key="normal" title="Go"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="RRP-Hk-dEC" secondAttribute="trailing" constant="20" id="6Nh-5Z-CbW"/>
+                            <constraint firstAttribute="trailing" secondItem="y0X-a1-iPO" secondAttribute="trailing" constant="20" id="8m8-E4-hUy"/>
+                            <constraint firstItem="y0X-a1-iPO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Kqb-xI-QFM"/>
+                            <constraint firstItem="RRP-Hk-dEC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="Mvi-iO-5KH"/>
+                            <constraint firstItem="tdx-Vz-xUy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="PuA-id-ISV"/>
+                            <constraint firstItem="MHF-xB-X3I" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="WYg-FR-95D"/>
+                            <constraint firstItem="RRP-Hk-dEC" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.1" id="Wuv-Dt-i5A"/>
+                            <constraint firstItem="ahO-YG-nod" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="bbb-oy-hiO"/>
+                            <constraint firstItem="MHF-xB-X3I" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.1" id="cad-m3-rDT"/>
+                            <constraint firstItem="MHF-xB-X3I" firstAttribute="leading" secondItem="ahO-YG-nod" secondAttribute="trailing" id="d6S-Du-AT5"/>
+                            <constraint firstAttribute="bottom" secondItem="y0X-a1-iPO" secondAttribute="bottom" constant="20" id="ftv-oZ-I4r"/>
+                            <constraint firstItem="RRP-Hk-dEC" firstAttribute="leading" secondItem="MHF-xB-X3I" secondAttribute="trailing" id="jdy-1p-dnr"/>
+                            <constraint firstItem="ahO-YG-nod" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.1" id="qfn-MX-oZF"/>
+                            <constraint firstItem="ahO-YG-nod" firstAttribute="leading" secondItem="tdx-Vz-xUy" secondAttribute="trailing" id="s0p-jG-OyI"/>
+                            <constraint firstItem="tdx-Vz-xUy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="tlr-2D-Uih"/>
+                            <constraint firstItem="y0X-a1-iPO" firstAttribute="top" secondItem="tdx-Vz-xUy" secondAttribute="bottom" constant="20" id="xPy-Eu-Qt3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnBack" destination="MHF-xB-X3I" id="TXB-e4-o5S"/>
+                        <outlet property="btnGo" destination="ahO-YG-nod" id="ZaA-lh-PSv"/>
+                        <outlet property="btnNext" destination="RRP-Hk-dEC" id="urS-FK-FX5"/>
+                        <outlet property="txtURL" destination="tdx-Vz-xUy" id="URU-gO-C1n"/>
+                        <outlet property="wvMain" destination="y0X-a1-iPO" id="N9R-s9-cHh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+</document>
