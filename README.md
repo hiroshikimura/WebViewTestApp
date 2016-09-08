@@ -1,2 +1,2 @@
 # WebViewTestApp
-WebViewテスト用アプリ
+iOS WebViewテスト用アプリ
