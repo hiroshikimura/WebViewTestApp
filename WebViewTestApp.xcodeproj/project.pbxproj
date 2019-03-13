@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2048EE221D33DA3C0051D03D /* URLHistory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2048EE201D33DA3C0051D03D /* URLHistory+CoreDataProperties.swift */; };
+		2048EE231D33DA3C0051D03D /* URLHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2048EE211D33DA3C0051D03D /* URLHistory.swift */; };
 		20F719BE1D05BAAE00224946 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F719BD1D05BAAE00224946 /* AppDelegate.swift */; };
 		20F719C01D05BAAE00224946 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F719BF1D05BAAE00224946 /* ViewController.swift */; };
 		20F719C31D05BAAE00224946 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F719C11D05BAAE00224946 /* Main.storyboard */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2048EE201D33DA3C0051D03D /* URLHistory+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLHistory+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2048EE211D33DA3C0051D03D /* URLHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLHistory.swift; sourceTree = "<group>"; };
 		20F719BA1D05BAAE00224946 /* WebViewTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebViewTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F719BD1D05BAAE00224946 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20F719BF1D05BAAE00224946 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +103,8 @@
 		20F719BC1D05BAAE00224946 /* WebViewTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				2048EE201D33DA3C0051D03D /* URLHistory+CoreDataProperties.swift */,
+				2048EE211D33DA3C0051D03D /* URLHistory.swift */,
 				20F719BD1D05BAAE00224946 /* AppDelegate.swift */,
 				20F719BF1D05BAAE00224946 /* ViewController.swift */,
 				20F719C11D05BAAE00224946 /* Main.storyboard */,
@@ -197,13 +203,16 @@
 					20F719B91D05BAAE00224946 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 4SZ68797NN;
+						LastSwiftMigration = 0800;
 					};
 					20F719D01D05BAAF00224946 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 20F719B91D05BAAE00224946;
 					};
 					20F719DB1D05BAAF00224946 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 20F719B91D05BAAE00224946;
 					};
 				};
@@ -262,6 +271,8 @@
 			files = (
 				20F719C61D05BAAE00224946 /* WebViewTestApp.xcdatamodeld in Sources */,
 				20F719C01D05BAAE00224946 /* ViewController.swift in Sources */,
+				2048EE221D33DA3C0051D03D /* URLHistory+CoreDataProperties.swift in Sources */,
+				2048EE231D33DA3C0051D03D /* URLHistory.swift in Sources */,
 				20F719BE1D05BAAE00224946 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +423,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.kimura.WebViewTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -425,6 +437,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.kimura.WebViewTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -436,6 +449,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.kimura.WebViewTestAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebViewTestApp.app/WebViewTestApp";
 			};
 			name = Debug;
@@ -448,6 +462,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.kimura.WebViewTestAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebViewTestApp.app/WebViewTestApp";
 			};
 			name = Release;
@@ -459,6 +474,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.kimura.WebViewTestAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = WebViewTestApp;
 			};
 			name = Debug;
@@ -470,6 +486,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.kimura.WebViewTestAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = WebViewTestApp;
 			};
 			name = Release;
@@ -493,6 +510,7 @@
 				20F719E71D05BAAF00224946 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20F719E81D05BAAF00224946 /* Build configuration list for PBXNativeTarget "WebViewTestAppTests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +519,7 @@
 				20F719EA1D05BAAF00224946 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20F719EB1D05BAAF00224946 /* Build configuration list for PBXNativeTarget "WebViewTestAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +528,7 @@
 				20F719ED1D05BAAF00224946 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
